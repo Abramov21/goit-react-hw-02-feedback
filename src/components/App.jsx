@@ -11,10 +11,6 @@ export default class App extends Component {
     bad: 0,
   };
 
-  // handleIncrement =(prevState) =>{
-  //   this.setState( ...prevState, {good: this.state.good +1},{bad: this.state.good +1}, {neutral: this.state.good +1})
-  //   console.log(this.state);
-  // }
 
   countTotalFeedback(){
     const { good, bad, neutral} = this.state;
@@ -36,14 +32,6 @@ export default class App extends Component {
       }
      })
   }
-
-  // handleIncrement = event => {
-  //   console.log(event.target.name);
-  //   const { name } = event.target;
-  //   this.setState(prevState => ({
-  //     [name]: prevState[name] + 1,
-  //   }));
-  // }
 
 
   render() {
