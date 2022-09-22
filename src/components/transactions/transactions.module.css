@@ -1,0 +1,25 @@
+table {
+    border: 1px solid #ccc;
+    border-spacing: 3px;
+    table-layout: fixed;
+    width: 800px;
+    margin-top: 20px;
+  }
+  tr {
+    border: 1px solid #ccc;
+  }
+  td,
+  th {
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    height: 30px;
+    text-align: center;
+  }
+  .transaction__history {
+    margin: auto;
+    border-collapse: separate;
+  }
+  thead {
+    background-color: aqua;
+    color: white;
+}

@@ -1,0 +1,33 @@
+.title {
+    text-align: center;
+    color: grey;
+  }
+  .stat__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    gap: 10px;
+
+    margin-left: 10px;
+    background-color: aqua;
+    border: 1px solid red;
+    border-radius: 5px;
+  }
+  .label,
+  .percentage {
+    color: #000;
+  }
+  .percentage {
+    font-size: 25px;
+    font-weight: 600;
+  }

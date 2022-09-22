@@ -1,24 +1,34 @@
 import PropTypes from 'prop-types';
-// import css from 'react';
+import css from './statistics.module.css';
 
-const Statistics = ({ good, bad, neutral, total, positivePercentage }) => {
+const Statistics = ({title,stats}) =>{
   return (
-    <>
-      <p>Good: {good}</p>
-      <p>Bad: {bad}</p>
-      <p>Neutral {neutral}</p>
-      <p>Total: {total}</p>
-      <p>Positiv: {positivePercentage} %</p>
-    </>
-  );
-};
+    <section className={css.statistics}>
+    {title && <h2 className={css.title}>{title}</h2>}
+
+    <ul className={css.stat__list}>
+      {stats.map(({ id, label, percentage }) => (
+        <li
+          key={id}
+          className={css.item}
+        >
+          <span className={css.label}>{label}</span>
+          <span className={css.percentage}>{percentage} %</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+);
+}
 
 export default Statistics;
 
+
 Statistics.propTypes = {
-  positivePercentage: PropTypes.number,
-  good: PropTypes.number,
-  neutral: PropTypes.number,
-  bad: PropTypes.number,
-  total: PropTypes.number,
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf( PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  })).isRequired,
 };
