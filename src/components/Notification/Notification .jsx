@@ -8,8 +8,8 @@ const Notification  = ({ message }) => {
 };
 
 
-export default Notification ;
+export default Notification;
 
-Notification .propTypes = {
+Notification.propTypes = {
   title: PropTypes.string.isRequired,
 };
