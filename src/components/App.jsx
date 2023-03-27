@@ -1,6 +1,3 @@
-};
-// "homepage": "https://abramov21.github.io/goit-react-hw-02-feedback/",
-// "homepage": "https://abramov21.github.io/goit-react-hw-01-component/",
 import React, { Component } from 'react';
 import { Section } from './Section/Section';
 import { Statistics } from './Statistics/Statistics';
