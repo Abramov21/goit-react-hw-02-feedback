@@ -14,3 +14,5 @@ export const App = () => {
     </div>
   );
 };
+// "homepage": "https://abramov21.github.io/goit-react-hw-02-feedback/",
+// "homepage": "https://abramov21.github.io/goit-react-hw-01-component/",
